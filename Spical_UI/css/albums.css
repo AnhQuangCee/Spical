@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "Script";
+  /*a name to be used later*/
+  src: url("../fonts/ScriptMT/SCRIPTBL.ttf");
+  /*URL to font*/ }
+html,
+body {
+  font-family: "Script"; }
+
+.navbar-fixed nav {
+  background: transparent;
+  border-radius: 0px 0px 10px 10px; }
+  .navbar-fixed nav .container span i {
+    margin: 0px 7px;
+    color: #3b3b3b; }
+    .navbar-fixed nav .container span i span {
+      font-family: "Script";
+      font-size: 25px;
+      color: #3b3b3b; }
+
+.side-menu li.title {
+  background-color: #3b3b3b;
+  padding: 2px 0px;
+  border-radius: 0px 0px 10px 10px; }
+  .side-menu li.title a {
+    color: white;
+    font-size: 20px; }
+.side-menu li a {
+  font-family: "Script"; }
+
+.container-fluid {
+  background: #f1f1f1;
+  position: relative; }
+  .container-fluid .row .col {
+    padding: 0px; }
+    .container-fluid .row .col .images {
+      overflow: hidden;
+      width: 100%;
+      background-image: url("../images/background (3).png");
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
+    .container-fluid .row .col .slogan {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      font-family: "Script";
+      color: white; }
+      .container-fluid .row .col .slogan h4,
+      .container-fluid .row .col .slogan p {
+        margin: 0px; }
+
+.title-header .container .row .col h3 {
+  margin: 5% 0 0 0;
+  font-family: "Script";
+  font-size: 40px; }
+.title-header .container .row .col p {
+  margin: 0px;
+  font-family: "Quicksand", sans-serif; }
+
+.slide-image {
+  height: 200px; }
+  .slide-image .container .row .col {
+    height: 200px; }
+    .slide-image .container .row .col .carousel .carousel-item,
+    .slide-image .container .row .col .carousel-slider .carousel-item {
+      padding: 0px 10px;
+      width: 300px !important; }
+      .slide-image .container .row .col .carousel .carousel-item img,
+      .slide-image .container .row .col .carousel-slider .carousel-item img {
+        border-radius: 10px; }
+      .slide-image .container .row .col .carousel .carousel-item:active,
+      .slide-image .container .row .col .carousel-slider .carousel-item:active {
+        height: 100px !important; }
+
+.gallery .container .row {
+  margin: 0px; }
+  .gallery .container .row .col p,
+  .gallery .container .row .s12 p {
+    font-family: "Script";
+    font-size: 20px;
+    color: #3b3b3b;
+    padding: 0px; }
+  .gallery .container .row .card {
+    border-radius: 10px; }
+    .gallery .container .row .card img {
+      border-radius: 10px; }
+
+.nav-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; }
+  .nav-bottom nav.white {
+    border: 1px solid white;
+    border-radius: 10px 10px 0px 0px; }
+  .nav-bottom .row .col {
+    padding-top: 0.5%; }
+    .nav-bottom .row .col i {
+      color: #a0a0a0;
+      font-size: 30px;
+      transition: 0.4s; }
+      .nav-bottom .row .col i:hover {
+        cursor: pointer;
+        color: #3b3b3b; }
+      .nav-bottom .row .col i:active {
+        color: #3b3b3b; }
+      .nav-bottom .row .col i:focus {
+        color: #3b3b3b; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial; }
+
+.header {
+  text-align: center;
+  padding: 32px; }
+
+.row {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+  padding: 0px; }
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 33%;
+  /* IE10 */
+  flex: 33%;
+  max-width: 33%;
+  padding: 0px; }
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 10px; }
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%; } }
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%; } }
+
+/*# sourceMappingURL=albums.css.map */
