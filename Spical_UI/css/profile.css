@@ -48,7 +48,7 @@ body {
         margin-left: -40px; }
       .avatar .container .row .col .image-block .circular--portrait {
         border: 5px solid white;
-        box-shadow: 0px 2px 6px #a9a9a9;
+        box-shadow: 0px 2px 6px #3b3b3b;
         position: relative;
         height: 100px;
         width: 100px;
@@ -108,6 +108,9 @@ body {
   height: 200px; }
   .slide-image .container .row .col {
     height: 180px; }
+    .slide-image .container .row .col p {
+      font-family: "Script";
+      font-size: 20px; }
     .slide-image .container .row .col .images {
       overflow: hidden;
       width: 100%;
@@ -116,64 +119,92 @@ body {
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      border-radius: 10px; }
-
-.gallery .container .row {
-  margin: 0px;
-  position: relative; }
-  .gallery .container .row .col .image-block {
-    position: absolute; }
-    .gallery .container .row .col .image-block .circular--landscape {
-      display: inline-block;
-      position: relative;
-      height: 100px;
-      width: 100px;
-      overflow: hidden; }
-    .gallery .container .row .col .image-block .circular--landscape img {
-      width: auto;
-      height: 100%;
-      margin-left: -40px; }
-    .gallery .container .row .col .image-block .circular--portrait {
       border-radius: 10px;
-      box-shadow: 0px 2px 6px #a9a9a9;
-      position: relative;
-      height: 100px;
-      width: 100px;
-      overflow: hidden; }
-    .gallery .container .row .col .image-block .circular--portrait img {
-      width: 100%;
-      height: auto; }
-    .gallery .container .row .col .image-block img {
-      height: 100px;
-      width: 100px; }
-    .gallery .container .row .col .image-block p.name {
+      position: relative; }
+    .slide-image .container .row .col .text {
       position: absolute;
       bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      margin: 0;
-      font-family: 'Script';
-      color: white; }
-    .gallery .container .row .col .image-block .bg-file {
-      background: #0e0e0e;
+      left: 10px; }
+      .slide-image .container .row .col .text p {
+        color: white;
+        margin: 0;
+        font-size: 15px; }
+
+.gallery .container .row .col p {
+  font-family: "Script";
+  font-size: 20px;
+  margin: 0px; }
+.gallery .container .row .col .image-block {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 20px;
+  position: relative; }
+  .gallery .container .row .col .image-block .circular--landscape {
+    display: inline-block;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    overflow: hidden; }
+  .gallery .container .row .col .image-block .circular--landscape img {
+    width: auto;
+    height: 100%;
+    margin-left: -40px; }
+  .gallery .container .row .col .image-block .circular--portrait {
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px #3b3b3b !important;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    overflow: hidden; }
+  .gallery .container .row .col .image-block .circular--portrait img {
+    width: 100%;
+    height: auto; }
+  .gallery .container .row .col .image-block img {
+    height: 100px;
+    width: 100px; }
+  .gallery .container .row .col .image-block p.name {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-family: "Script";
+    color: white; }
+  .gallery .container .row .col .image-block .bg-file {
+    background: inherit;
+    border-radius: 8px;
+    box-shadow: 0 0 32px rgba(0, 0, 0, 0.9);
+    background: rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 30px;
+    width: 60px;
+    padding: 5px 5px;
+    border-radius: 10px; }
+    .gallery .container .row .col .image-block .bg-file .text p.file {
+      font-family: "Script";
+      color: black;
+      font-size: 12px;
+      text-align: center;
+      margin: auto; }
+    .gallery .container .row .col .image-block .bg-file .blur {
+      background: inherit;
+      height: 30px;
+      width: 60px;
       position: absolute;
-      bottom: 0;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      height: 30px;
-      padding: 0px 2px;
-      border-radius: 10px; }
-      .gallery .container .row .col .image-block .bg-file span.file {
-        margin: 0;
-        font-family: 'Script';
-        color: white;
-        font-size: 12px;
-        height: 20px; }
-  .gallery .container .row .card {
+      filter: blur(20px);
+      z-index: -1; }
+.gallery .container .row .card {
+  border-radius: 10px; }
+  .gallery .container .row .card img {
     border-radius: 10px; }
-    .gallery .container .row .card img {
-      border-radius: 10px; }
 
 .nav-bottom {
   position: fixed;

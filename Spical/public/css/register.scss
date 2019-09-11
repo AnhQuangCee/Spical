@@ -1,0 +1,64 @@
+// COLOR
+$bgLogin1: #464646;
+$bgLogin2: #0E0E0E;
+// FONT
+@font-face {
+    font-family: 'Script'; /*a name to be used later*/
+    src: url('../fonts/ScriptMT/SCRIPTBL.ttf'); /*URL to font*/
+}
+$logoText: 25px;
+$titleText: 40px;
+$subTitleText: 16px;
+$footerText: 20px;
+//IMAGE
+
+
+html, body {
+    background-image: linear-gradient(80deg, $bgLogin1, $bgLogin2);
+    font-family: 'Script';
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container{
+    .row{
+        .logo{
+           p{
+               color: white;
+               font-size: $logoText;
+           }
+        }
+        .content{
+            h4{
+                color: white;
+                font-size: $titleText;
+            }
+            p{
+                color: white;
+                font-size: $subTitleText;
+            }
+            
+        }
+        
+        .submit{
+            padding: 0px;
+            .go{
+                .btn{
+                    width: 100%;
+                    border: 1px solid white;
+                    border-radius: 50px;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}
+.signup{
+    padding: 0px;
+    text-align: center;
+    a{
+        font-size: $footerText;
+        text-align: center;
+    }
+}
