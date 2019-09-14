@@ -7,9 +7,10 @@ const mongoose = require('mongoose');
 const cookieSession = require('cookie-session');
 const path = require('path');
 const passportSetup = require('./config/passport-setup');
+const bcrypt = require("bcrypt");
+const flash = require('connect-flash');
 
 const app = express();
-app.use(express.static('public'))
 
 // setyp view engine
 app.set('views', path.join(__dirname, 'views'));
@@ -21,10 +22,16 @@ app.use(cookieSession({
   keys:[keys.session.cookieKey]
 }));
 
+//use flash
+app.use(flash());
+
 //initialize cookie
 app.use(passport.initialize());
 app.use(passport.session());
 
+// express use
+app.use(express.static('public'))
+app.use(express.urlencoded({extended:false}));
 // Use mongodb
 mongoose.connect(keys.mongodb.dbURL, () => {
   console.log("Connect to mongodb");

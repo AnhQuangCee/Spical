@@ -1,7 +1,7 @@
 // COLOR
 $bgColor: #f1f1f1;
 $bgLogin2: #0e0e0e;
-$bgColor2: #3B3B3B;
+$bgColor2: #3b3b3b;
 // FONT
 @font-face {
   font-family: "Script"; /*a name to be used later*/
@@ -26,28 +26,28 @@ body {
     background: $bgColor2;
     border: 1px solid $bgColor2;
     border-radius: 0px 0px 10px 10px;
-    .container{
-      span{
-        i{
+    .container {
+      span {
+        i {
           margin: 0px 7px;
         }
       }
     }
   }
 }
-.side-menu{
-  li.title{
+.side-menu {
+  li.title {
     background-color: $bgColor2;
     padding: 2px 0px;
     border-radius: 0px 0px 10px 10px;
-    a{
+    a {
       color: white;
       font-size: $subHeaderText;
     }
   }
-  li{
-    a{
-      font-family: 'Script';
+  li {
+    a {
+      font-family: "Script";
     }
   }
 }
@@ -104,20 +104,29 @@ body {
   }
   .row {
     .col {
-      padding-top: 0.5%;
-      i {
-        color: #a0a0a0;
-        font-size: $iconsText;
-        transition: 0.4s;
-        &:hover {
-          cursor: pointer;
-          color: $bgColor2;
-        }
-        &:active {
-          color: $bgColor2;
-        }
-        &:focus {
-          color: $bgColor2;
+      padding: 0px;
+      ul {
+        .col {
+          li {
+            width: 100%;
+            a {
+              i {
+                color: #a0a0a0;
+                font-size: $iconsText;
+                transition: 0.4s;
+                &:hover {
+                  cursor: pointer;
+                  color: $bgColor2 !important;
+                }
+                &:active {
+                  color: $bgColor2 !important;
+                }
+                &:focus {
+                  color: $bgColor2 !important;
+                }
+              }
+            }
+          }
         }
       }
     }

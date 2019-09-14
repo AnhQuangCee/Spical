@@ -4,11 +4,14 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^3.0.6",
+    "connect-flash": "^0.1.1",
     "cookie-session": "^1.3.3",
     "ejs": "^2.7.1",
     "express": "^4.17.1",
@@ -17,6 +20,7 @@
     "passport-facebook": "^3.0.0",
     "passport-github": "^1.1.0",
     "passport-google-oauth20": "^2.0.0",
+    "passport-local": "^1.0.0",
     "sass": "^1.23.0-module.beta.1"
   }
 }

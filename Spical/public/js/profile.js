@@ -23,4 +23,9 @@ noUiSlider.create(slider, {
    'max': 100
  }
 });
+
+// Back button
+function goBack() {
+  window.history.back();
+}
       

@@ -8,21 +8,21 @@ body {
   font-family: "Script"; }
 
 .navbar-fixed nav {
-  background: #3B3B3B;
-  border: 1px solid #3B3B3B;
+  background: #3b3b3b;
+  border: 1px solid #3b3b3b;
   border-radius: 0px 0px 10px 10px; }
   .navbar-fixed nav .container span i {
     margin: 0px 7px; }
 
 .side-menu li.title {
-  background-color: #3B3B3B;
+  background-color: #3b3b3b;
   padding: 2px 0px;
   border-radius: 0px 0px 10px 10px; }
   .side-menu li.title a {
     color: white;
     font-size: 20px; }
 .side-menu li a {
-  font-family: 'Script'; }
+  font-family: "Script"; }
 
 .container-fluid {
   background: #f1f1f1;
@@ -60,18 +60,20 @@ body {
     border: 1px solid white;
     border-radius: 10px 10px 0px 0px; }
   .nav-bottom .row .col {
-    padding-top: 0.5%; }
-    .nav-bottom .row .col i {
-      color: #a0a0a0;
-      font-size: 30px;
-      transition: 0.4s; }
-      .nav-bottom .row .col i:hover {
-        cursor: pointer;
-        color: #3B3B3B; }
-      .nav-bottom .row .col i:active {
-        color: #3B3B3B; }
-      .nav-bottom .row .col i:focus {
-        color: #3B3B3B; }
+    padding: 0px; }
+    .nav-bottom .row .col ul .col li {
+      width: 100%; }
+      .nav-bottom .row .col ul .col li a i {
+        color: #a0a0a0;
+        font-size: 30px;
+        transition: 0.4s; }
+        .nav-bottom .row .col ul .col li a i:hover {
+          cursor: pointer;
+          color: #3b3b3b !important; }
+        .nav-bottom .row .col ul .col li a i:active {
+          color: #3b3b3b !important; }
+        .nav-bottom .row .col ul .col li a i:focus {
+          color: #3b3b3b !important; }
 
 * {
   box-sizing: border-box; }

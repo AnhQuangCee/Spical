@@ -12,3 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
   var instances = M.Carousel.init(elems, {fullWidth:true});
 });
 
+function goBack() {
+  window.history.back();
+}

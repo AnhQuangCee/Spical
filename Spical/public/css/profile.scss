@@ -306,20 +306,29 @@ body {
   }
   .row {
     .col {
-      padding-top: 0.5%;
-      i {
-        color: #a0a0a0;
-        font-size: $iconsText;
-        transition: 0.4s;
-        &:hover {
-          cursor: pointer;
-          color: $bgColor2;
-        }
-        &:active {
-          color: $bgColor2;
-        }
-        &:focus {
-          color: $bgColor2;
+      padding: 0px;
+      ul {
+        .col {
+          li {
+            width: 100%;
+            a {
+              i {
+                color: #a0a0a0;
+                font-size: $iconsText;
+                transition: 0.4s;
+                &:hover {
+                  cursor: pointer;
+                  color: $bgColor2 !important;
+                }
+                &:active {
+                  color: $bgColor2 !important;
+                }
+                &:focus {
+                  color: $bgColor2 !important;
+                }
+              }
+            }
+          }
         }
       }
     }
