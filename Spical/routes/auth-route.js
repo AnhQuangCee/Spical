@@ -2,7 +2,6 @@ const router = require('express').Router();
 const passport = require('passport');
 const bcrypt = require("bcrypt");
 
-const users = [];
 // auth login
 router.get('/login', (req,res) => {
     res.render('login');
@@ -19,12 +18,13 @@ router.get('/albums', (req,res) => {
     res.render('albums');
 });
 
+// Register
 router.get('/register', (req,res) => {
     res.render('register');
 });
 router.post('/register', passport.authenticate('local-signup', {
     successRedirect: '/profile', // chuyển hướng tới trang được bảo vệ
-    failureRedirect: '/register', // trở lại trang đăng ký nếu có lỗi
+    failureRedirect: '/auth/register', // trở lại trang đăng ký nếu có lỗi
     failureFlash: true // allow flash messages
 }));
 
@@ -35,28 +35,9 @@ router.get('/login', (req,res) => {
 // Xử lý thông tin khi có người thực hiện đăng nhập
 router.post('/login', passport.authenticate("local-login", {
     successRedirect : '/profile',
-    failureRedirect : '/login',
+    failureRedirect : '/auth/login',
     failureFlash : true
 }));
-// router.get('/register', (req,res) => {
-//     res.render('register');
-// });
-// router.post('/register', async (req,res) => {
-//     // res.render('register');
-//     try {
-//         const hashedPassword = await bcrypt.hash(req.body.password, 10)
-//         users.push({
-//             id: Date.now().toString(),
-//             username: req.body.username,
-//             email: req.body.email,
-//             password: hashedPassword
-//         })
-//         res.redirect('/auth/login');
-//     } catch {
-//         res.redirect('/auth/register');
-//     }
-//     console.log(users);
-// });
 
 // auth with google+
 router.get('/google', passport.authenticate('google', {

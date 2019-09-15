@@ -5,6 +5,7 @@ const LocalStrategy = require("passport-local");
 const keys = require("./keys");
 const User = require("../models/user-models");
 const bcrypt = require("bcrypt");
+const flash = require("connect-flash");
 
 passport.serializeUser((user, done) => {
   done(null, user.id);
@@ -32,16 +33,16 @@ passport.use(
           done(null, currentUser);
         } else {
           // if not, create user in our db
-          new User({
-            username: profile.displayName,
-            googleId: profile.id,
-            thumbnail: profile._json.picture
-          })
-            .save()
-            .then(newUser => {
-              // console.log("New User created" + newUser);
-              done(null, newUser);
-            });
+          var newUser = new User();
+          // lưu thông tin cho tài khoản local
+          newUser.google.username = profile.displayName;
+          newUser.google.googleId = profile.id;
+          newUser.google.thumbnail = profile._json.picture;
+          // lưu user
+          newUser.save(function(err) {
+            if (err) throw err;
+            return done(null, newUser);
+          });
         }
       });
     }
@@ -66,16 +67,16 @@ passport.use(
           done(null, currentUser);
         } else {
           // if not, create user in our db
-          new User({
-            username: profile.displayName,
-            facebookId: profile.id
-            // thumbnail: profile._json.picture
-          })
-            .save()
-            .then(newUser => {
-              // console.log("New User created" + newUser);
-              done(null, newUser);
-            });
+          var newUser = new User();
+          // lưu thông tin cho tài khoản local
+          newUser.facebook.username = profile.displayName;
+          newUser.facebook.facebookId = profile.id;
+          // newUser.facebook.thumbnail = profile._json.picture;
+          // lưu user
+          newUser.save(function(err) {
+            if (err) throw err;
+            return done(null, newUser);
+          });
         }
       });
     }
@@ -89,9 +90,9 @@ passport.use(
     {
       // mặc định local strategy sử dụng username và password,
       // chúng ta cần cấu hình lại
-      username: "username",
-      email:"email",
-      password: "password",
+      // username: "username",
+      usernameField: "email",
+      passwordField: "password",
       passReqToCallback: true // cho phép chúng ta gửi reqest lại hàm callback
     },
     function(req, email, password, done) {
@@ -110,6 +111,7 @@ passport.use(
             // tạo mới user
             var newUser = new User();
             // lưu thông tin cho tài khoản local
+            newUser.local.username = req.body.username;
             newUser.local.email = email;
             newUser.local.password = newUser.generateHash(password);
             // lưu user
@@ -129,9 +131,9 @@ passport.use(
   "local-login",
   new LocalStrategy(
     {
-      username: "username",
-      email:"email",
-      password: "password",
+      // username: "username",
+      usernameField: "email",
+      passwordField: "password",
       passReqToCallback: true
     },
     function(req, email, password, done) {
@@ -158,36 +160,3 @@ passport.use(
     }
   )
 );
-
-// With Local
-// passport.use(
-//   new LocalStrategy((username, password, done) => {
-//     User.findOne({ username: 'email' }).then(currentUser => {
-//       if (currentUser) {
-//         done(null, currentUser);
-//       } else {
-//         new User({
-//           username: users.username,
-//           passport: users.password
-//         })
-//           .save()
-//           .then(newUser => {
-//             done(null, newUser);
-//           });
-//       }
-//     });
-//     const user = getUserByEmail(email);
-//     if(user == null){
-//       return done(null,false,{message:"No user with the email"});
-//     }
-//     try {
-//       if(await bcrypt.compare(password,user.password)){
-//         return done(null,user)
-//       } else{
-//         return done(null,false,{message:"Password incorrect"});
-//       }
-//     } catch (e){
-//       return done(e);
-//     }
-//   })
-// );

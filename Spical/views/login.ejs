@@ -27,38 +27,40 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col s12">
-				<div class="row">
-					<div class="input-field col s12">
-						<input type="text" id="autocomplete-input" class="autocomplete">
-						<label for="autocomplete-input">Username</label>
+			<form action="/auth/login" method="POST">
+				<div class="col s12">
+					<div class="row">
+						<div class="input-field col s12">
+							<input name="email" type="text" id="autocomplete-input" class="autocomplete">
+							<label for="autocomplete-input">Username</label>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col s12">
-				<div class="row">
-					<div class="input-field col s12">
-						<input type="text" id="autocomplete-input" class="autocomplete">
-						<label for="autocomplete-input">Password</label>
+				<div class="col s12">
+					<div class="row">
+						<div class="input-field col s12">
+							<input name="password" type="text" id="autocomplete-input" class="autocomplete">
+							<label for="autocomplete-input">Password</label>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col s12 forgot-password">
-				<a href="#">Forgot password?</a>
-			</div>
-			<div class="col s12 submit">
-				<div class="row">
-					<div class="col s6">
-						<a class="btn-floating waves-effect waves-light white facebook" href="/auth/facebook"><i
-								class="fab fa-facebook-f black-text"></i></a>
-						<a class="btn-floating waves-effect waves-light white google" href="/auth/google"><i
-								class="fab fa-google-plus-g black-text"></i></a>
-					</div>
-					<div class="col s6 go">
-						<div class="btn waves-effect waves-light white right black-text">Go!</div>
+				<div class="col s12 forgot-password">
+					<a href="#">Forgot password?</a>
+				</div>
+				<div class="col s12 submit">
+					<div class="row">
+						<div class="col s6">
+							<a class="btn-floating waves-effect waves-light white facebook" href="/auth/facebook"><i
+									class="fab fa-facebook-f black-text"></i></a>
+							<a class="btn-floating waves-effect waves-light white google" href="/auth/google"><i
+									class="fab fa-google-plus-g black-text"></i></a>
+						</div>
+						<div class="col s6 go">
+							<button type="submit" class="btn waves-effect waves-light white black-text">Go!</button>
+						</div>
 					</div>
 				</div>
-			</div>
+			</form>
 		</div>
 	</div>
 	<footer class=" container signup">

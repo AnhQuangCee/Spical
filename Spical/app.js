@@ -9,13 +9,12 @@ const path = require('path');
 const passportSetup = require('./config/passport-setup');
 const bcrypt = require("bcrypt");
 const flash = require('connect-flash');
-
+const bodyParser = require("body-parser");
 const app = express();
 
 // setyp view engine
 app.set('views', path.join(__dirname, 'views'));
 app.set("view engine", "ejs");
-
 //use cookie-session
 app.use(cookieSession({
   maxAge: 24*60*60*1000,
@@ -32,6 +31,10 @@ app.use(passport.session());
 // express use
 app.use(express.static('public'))
 app.use(express.urlencoded({extended:false}));
+
+//Body-parser
+app.use(bodyParser.urlencoded({ extended: false }));
+
 // Use mongodb
 mongoose.connect(keys.mongodb.dbURL, () => {
   console.log("Connect to mongodb");
