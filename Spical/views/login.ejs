@@ -26,20 +26,21 @@
 				<p>The whole world in the photos</p>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row inputField">			
 			<form action="/auth/login" method="POST">
 				<div class="col s12">
 					<div class="row">
 						<div class="input-field col s12">
-							<input name="email" type="text" id="autocomplete-input" class="autocomplete">
-							<label for="autocomplete-input">Username</label>
+							<input name="email" type="email" id="email" class="validate">
+							<label for="email">Email</label>
+							<span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
 						</div>
 					</div>
 				</div>
 				<div class="col s12">
 					<div class="row">
 						<div class="input-field col s12">
-							<input name="password" type="text" id="autocomplete-input" class="autocomplete">
+							<input name="password" type="password" id="autocomplete-input" class="autocomplete">
 							<label for="autocomplete-input">Password</label>
 						</div>
 					</div>
@@ -56,7 +57,7 @@
 									class="fab fa-google-plus-g black-text"></i></a>
 						</div>
 						<div class="col s6 go">
-							<button type="submit" class="btn waves-effect waves-light white black-text">Go!</button>
+							<button type="submit" class="btn waves-effect waves-light white black-text right">Go!</button>
 						</div>
 					</div>
 				</div>

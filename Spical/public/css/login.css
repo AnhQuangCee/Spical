@@ -1,37 +1,39 @@
 @font-face {
-  font-family: 'Script';
+  font-family: "Script";
   /*a name to be used later*/
   src: url("../fonts/ScriptMT/SCRIPTBL.ttf");
   /*URL to font*/ }
-html, body {
-  background-image: linear-gradient(80deg, #464646, #0E0E0E);
-  font-family: 'Script';
+html,
+body {
+  font-family: "Script";
+  background: #f3f3f3;
   height: 100%;
   width: 100%; }
 
 .container .row .logo p {
-  color: white;
+  color: black;
   font-size: 25px; }
 .container .row .content h4 {
-  color: white;
+  color: black;
   font-size: 40px; }
 .container .row .content p {
-  color: white;
+  color: black;
   font-size: 16px; }
 .container .row .forgot-password a {
-  color: white; }
+  color: black; }
 .container .row .submit {
   padding-top: 10%; }
   .container .row .submit a.google {
     margin-left: 5px; }
   .container .row .submit .go .btn {
     width: 80px;
-    border: 1px solid white;
-    border-radius: 50px; }
+    border-radius: 50px;
+    font-family: "Script"; }
 
 .signup {
   text-align: center; }
   .signup a {
+    color: black !important;
     font-size: 20px; }
 
 /*# sourceMappingURL=login.css.map */

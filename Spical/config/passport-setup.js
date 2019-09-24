@@ -26,7 +26,7 @@ passport.use(
       clientSecret: keys.google.clientSecret
     },
     (accessToken, refreshToken, profile, done) => {
-      User.findOne({ googleId: profile.id }).then(currentUser => {
+      User.findOne({ "google.googleId": profile.id }).then(currentUser => {
         if (currentUser) {
           //already have the user
           // console.log('User is: ' + currentUser);
@@ -59,8 +59,8 @@ passport.use(
       clientSecret: keys.facebook.clientSecret
     },
     (accessToken, refreshToken, profile, done) => {
-      User.findOne({ facebookId: profile.id }).then(currentUser => {
-        console.log(profile);
+      User.findOne({ "facebook.facebookId": profile.id }).then(currentUser => {
+        // console.log(profile);
         if (currentUser) {
           //already have the user
           // console.log('User is: ' + currentUser);
@@ -114,6 +114,7 @@ passport.use(
             newUser.local.username = req.body.username;
             newUser.local.email = email;
             newUser.local.password = newUser.generateHash(password);
+            newUser.local.thumbnail = "https://66.media.tumblr.com/969d91d927edaa3b87ab35e6011dd856/tumblr_pxvecxJ5jK1w89qpgo1_1280.jpg";
             // lưu user
             newUser.save(function(err) {
               if (err) throw err;

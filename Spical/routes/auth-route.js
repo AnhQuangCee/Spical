@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const passport = require('passport');
 const bcrypt = require("bcrypt");
+const flash = require("connect-flash");
 
 // auth login
 router.get('/login', (req,res) => {
@@ -30,7 +31,7 @@ router.post('/register', passport.authenticate('local-signup', {
 
 // Login
 router.get('/login', (req,res) => {
-    res.render('login');
+    res.render('/auth/login', {message: req.flash('loginMessage')});
 });
 // Xử lý thông tin khi có người thực hiện đăng nhập
 router.post('/login', passport.authenticate("local-login", {

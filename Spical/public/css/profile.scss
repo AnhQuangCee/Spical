@@ -388,3 +388,103 @@ body {
     max-width: 100%;
   }
 }
+@media only screen and (max-width: 1920px) and (min-width: 1080px){
+  .gallery {
+    .container {
+      .row {
+        .col {
+          p {
+            font-family: "Script";
+            font-size: $titleText;
+            margin: 0px;
+          }
+          .image-block {
+            height: 320px;
+            width: 320px;
+            margin-bottom: 40px;
+            position: relative;
+            .circular--landscape {
+              display: inline-block;
+              position: absolute;
+              height: 100%;
+              overflow: hidden;
+            }
+  
+            .circular--landscape img {
+              width: auto;
+              height: 100%;
+              margin-left: -40px;
+            }
+            .circular--portrait {
+              border-radius: 10px;
+              box-shadow: 0px 2px 6px $bgColor2 !important;
+              position: relative;
+              height: 320px;
+              width: 320px;
+              overflow: hidden;
+            }
+            .circular--portrait img {
+              width: 100%;
+              height: auto;
+            }
+            img {
+              height: 100px;
+              width: 100px;
+            }
+            p.name {
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+              transform: translateX(-50%);
+              margin: 0;
+              font-family: "Script";
+              color: white;
+            }
+            .bg-file {
+              background: inherit;
+              border-radius: 8px;
+              box-shadow: 0 0 32px rgba(0, 0, 0, 0.9);
+              background: rgba(255, 255, 255, 0.3);
+              overflow: hidden;
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              height: 60px;
+              width: 120px;
+              padding: 10px 10px;
+              border-radius: 10px;
+              .text {
+                p.file {
+                  font-family: "Script";
+                  color: black;
+                  font-size: 24px;
+                  text-align: center;
+                  margin: auto;
+                }
+              }
+              .blur {
+                background: inherit;
+                height: 60px;
+                width: 120px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                filter: blur(20px);
+                z-index: -1;
+              }
+            }
+          }
+        }
+        .card {
+          border-radius: 20px;
+          img {
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+  }
+}

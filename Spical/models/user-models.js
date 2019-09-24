@@ -7,6 +7,7 @@ const userSchema = new Schema({
         username: String,
         email: String,
         password: String,
+        thumbnail: String,
     },
     facebook:{
         username: String,
