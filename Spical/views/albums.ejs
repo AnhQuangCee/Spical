@@ -76,17 +76,21 @@
 		<div class="container">
 			<div class="row">
 				<div class="col s12">
-					<p>Gallery</p>
+					<!-- <% for(var aa of image){ %>
+					<p><%= aa.title%></p>
+					<%}%> -->
 				</div>
 			</div>
 			<div class="row">
+				<!-- <% for(var aa of InstanA){ %> -->
 				<div class="col s4">
 					<div class="card">
 						<div class="card-image">
-							<img src="images/background.jpg">
+							<img src="<%= InstanA%>">
 						</div>
 					</div>
 				</div>
+				<!-- <%}%> -->
 				<div class="col s4">
 					<div class="card">
 						<div class="card-image">

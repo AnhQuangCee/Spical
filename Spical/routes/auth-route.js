@@ -15,9 +15,9 @@ router.get('/logout', (req, res) => {
     res.redirect('/');
 });
 
-router.get('/albums', (req,res) => {
-    res.render('albums');
-});
+// router.get('/albums', (req,res) => {
+//     res.render('albums');
+// });
 
 // Register
 router.get('/register', (req,res) => {

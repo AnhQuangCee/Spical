@@ -2,12 +2,25 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 const bcrypt = require("bcrypt");
 
+// const imageSchema = new Schema({
+//     title:{
+//         type: String
+//     },
+//     location:{
+//         type: String
+//     },
+//     images: {
+//         type: [String]
+//     }
+// });
+
 const userSchema = new Schema({
     local:{
         username: String,
         email: String,
         password: String,
         thumbnail: String,
+        // photos: imageSchema
     },
     facebook:{
         username: String,
