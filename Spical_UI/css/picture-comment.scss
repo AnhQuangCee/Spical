@@ -1,0 +1,169 @@
+// COLOR
+$bgColor: #f1f1f1;
+$bgLogin2: #0e0e0e;
+$bgColor2: #3b3b3b;
+$yellowColor: #ffc34b;
+$grayColor: #3b3b3b;
+$subTitleColor: #757575;
+// FONT
+@font-face {
+  font-family: "Script"; /*a name to be used later*/
+  src: url("../fonts/ScriptMT/SCRIPTBL.ttf"); /*URL to font*/
+  font-family: "Kaushan Script";
+  src: url("../fonts/KaushanScript/KaushanScript-Regular.ttf");
+}
+$iconsText: 30px;
+$titleAlbumsText: 40px;
+$subTitleText: 12px;
+$footerText: 20px;
+$titleText: 20px;
+$subHeaderText: 20px;
+$navText: 24px;
+//IMAGE
+$bgImages: "../images/background (3).png";
+
+html,
+body {
+  font-family: "Script";
+  background: $bgColor;
+}
+
+// NAVBAR
+.menu {
+  overflow: hidden;
+  width: 100%;
+  background-image: url($bgImages);
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .navbar-fixed {
+    nav {
+      background: transparent;
+      border-radius: 0px 0px 10px 10px;
+      .container {
+        span {
+          font-family: "Kaushan Script";
+          i {
+            margin: 0px 7px;
+            color: white;
+            span {
+              font-family: "Kaushan Script";
+              font-size: $navText;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// PHOTO-INFO
+.photo-info {
+  height: 900px;
+  width: 100%;
+  background: white;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0px 3px 6px 16% #888888;
+  padding: 0px 5%;
+  position: absolute;
+  top: 180px;
+  left: 0;
+  .avatar {
+    padding-top: 10%;
+    .row{
+      margin: 0px;
+      .image-block {
+        .circular--landscape {
+          display: inline-block;
+          position: relative;
+          height: 50px;
+          width: 50px;
+          overflow: hidden;
+          border-radius: 50%;
+        }
+  
+        .circular--landscape img {
+          width: auto;
+          height: 100%;
+        }
+        .circular--portrait {
+          border: 2px solid white;
+          box-shadow: 0px 2px 6px $bgColor2;
+          position: relative;
+          height: 50px;
+          width: 50px;
+          overflow: hidden;
+          border-radius: 50%;
+        }
+        .circular--portrait img {
+          width: 100%;
+          height: auto;
+        }
+        img {
+          height: 54px;
+          width: 54px;
+        }
+      }
+      .avatar-info {
+        .s9 {
+          p {
+            font-family: "Montserrat" sans-serif;
+            margin: 0px 10px;
+          }
+          p.name {
+            margin-top: 8px;
+            font-family: "Kaushan Script";
+          }
+        }
+      }
+      .s4 {
+        margin-top: 10px;
+        .btn-small {
+          text-transform: capitalize;
+          border-radius: 5px;
+          background: $yellowColor;
+        }
+      }
+    }
+  }
+
+  // COMMENTS
+  .comment {
+    .input-field {
+      border-radius: 25px;
+      background: white;
+      box-shadow: 0px 2px 3px #888888;
+      input[type="text"] {
+        border-bottom: 0px;
+        margin-bottom: 0px;
+        height: 40px;
+        margin-left: 20px;
+        font-family: "Kaushan Script";
+        &:focus {
+          border-bottom: none;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+  .comment-display{
+    padding-top:0px;
+    .row{
+      margin: 0px;
+      .s8{
+        height: 30px;
+      }
+      .comment-text{
+        border-radius: 25px;
+        box-shadow: 0px 2px 3px #888888;
+        p{
+          margin: 0px;
+          padding: 2px 10px;
+          font-family: "Kaushan Script";
+        }
+      }
+    }
+  }
+}

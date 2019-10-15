@@ -64,6 +64,7 @@ app.use('/albums', express.static('public'), albumsRoutes);
 
 // Error handling middleware
 app.use(function(err,req,res,next){
+  // res.status(422).render('error.ejs');
   res.status(422).send({error: err.message});
 });
 

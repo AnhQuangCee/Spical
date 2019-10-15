@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "Script";
+  /*a name to be used later*/
+  src: url("../fonts/ScriptMT/SCRIPTBL.ttf");
+  /*URL to font*/
+  font-family: "Kaushan Script";
+  src: url("../fonts/KaushanScript/KaushanScript-Regular.ttf"); }
+html,
+body {
+  font-family: "Script";
+  background: #f1f1f1; }
+
+.menu {
+  overflow: hidden;
+  width: 100%;
+  background-image: url("../images/background (3).png");
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .menu .navbar-fixed nav {
+    background: transparent;
+    border-radius: 0px 0px 10px 10px; }
+    .menu .navbar-fixed nav .container span {
+      font-family: "Kaushan Script"; }
+      .menu .navbar-fixed nav .container span i {
+        margin: 0px 7px;
+        color: white; }
+        .menu .navbar-fixed nav .container span i span {
+          font-family: "Kaushan Script";
+          font-size: 24px;
+          color: white; }
+
+.photo-info {
+  height: 900px;
+  width: 100%;
+  background: white;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0px 3px 6px 16% #888888;
+  padding: 0px 5%;
+  position: absolute;
+  top: 180px;
+  left: 0; }
+  .photo-info .avatar {
+    padding-top: 10%; }
+    .photo-info .avatar .image-block .circular--landscape {
+      display: inline-block;
+      position: relative;
+      height: 50px;
+      width: 50px;
+      overflow: hidden;
+      border-radius: 50%; }
+    .photo-info .avatar .image-block .circular--landscape img {
+      width: auto;
+      height: 100%; }
+    .photo-info .avatar .image-block .circular--portrait {
+      border: 2px solid white;
+      box-shadow: 0px 2px 6px #3b3b3b;
+      position: relative;
+      height: 50px;
+      width: 50px;
+      overflow: hidden;
+      border-radius: 50%; }
+    .photo-info .avatar .image-block .circular--portrait img {
+      width: 100%;
+      height: auto; }
+    .photo-info .avatar .image-block img {
+      height: 54px;
+      width: 54px; }
+    .photo-info .avatar .avatar-info .s9 p {
+      margin: 0px 10px; }
+    .photo-info .avatar .avatar-info .s9 p.name {
+      margin-top: 8px; }
+    .photo-info .avatar .s4 {
+      margin-top: 10px; }
+      .photo-info .avatar .s4 .btn-small {
+        text-transform: capitalize;
+        border-radius: 5px;
+        background: #ffc34b; }
+  .photo-info p {
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+    margin: 11px 5px 5px 5px;
+    color: #757575; }
+  .photo-info .subtile {
+    font-weight: 500; }
+  .photo-info .time {
+    font-weight: 300i; }
+  .photo-info h4 {
+    font-family: "Kaushan Script";
+    margin: 0px;
+    font-size: 20px; }
+  .photo-info .left .btn {
+    font-family: "Kaushan Script";
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 37px;
+    line-height: 36px;
+    width: 100%;
+    border-radius: 25px;
+    padding: 0 16px;
+    text-transform: capitalize;
+    background: #ffc34b;
+    color: #3b3b3b;
+    width: 100%; }
+  .photo-info .photo-box {
+    padding: 0px 5%; }
+    .photo-info .photo-box p {
+      font-family: "Kaushan Script";
+      margin: 0px; }
+
+/*# sourceMappingURL=picture-info.css.map */

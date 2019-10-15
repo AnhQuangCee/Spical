@@ -1,0 +1,89 @@
+// COLOR
+$bgColor: #f1f1f1;
+$bgLogin2: #0e0e0e;
+$bgColor2: #3b3b3b;
+$yellowColor: #ffc34b;
+$grayColor: #3b3b3b;
+// FONT
+@font-face {
+  font-family: "Script"; /*a name to be used later*/
+  src: url("../fonts/ScriptMT/SCRIPTBL.ttf"); /*URL to font*/
+}
+$iconsText: 30px;
+$titleAlbumsText: 40px;
+$subTitleText: 16px;
+$footerText: 20px;
+$titleText: 20px;
+$subHeaderText: 20px;
+$navText: 24px;
+//IMAGE
+$bgImages: "../images/background (3).png";
+
+html,
+body {
+  font-family: "Script";
+  background: $bgColor;
+}
+
+// NAVBAR
+.navbar-fixed {
+  nav {
+    background: transparent;
+    box-shadow: none;
+    .nav-wrapper {
+      a {
+        color: $bgColor2;
+        font-size: $navText;
+      }
+      li {
+        color: $bgColor2;
+      }
+    }
+  }
+}
+
+// ICON-LOGO
+.icon-logo {
+  padding: 50px 0px 0px 0px;
+  position: relative;
+  .icon-logo-circle{
+      position: absolute;
+      top: 110px;
+      left: 50%;
+      transform: translateX(-50%);
+      background:$yellowColor;
+      margin: auto;
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      box-shadow: 0px 3px 6px 16% #888888;
+      padding-top: 80px;
+      padding-bottom: 80px;
+      h3{
+          margin: auto;
+      }
+  }
+}
+
+// CREATE-UPLOAD
+.create-upload {
+  margin-top: 60px;
+  padding-top: 130px;
+  height: 900px;
+  width: 100%;
+  background:white;
+  border-radius: 50px 50px 0 0;
+  box-shadow: 0px 3px 6px 16% #888888;
+  p {
+    padding: 0 20%;
+    font-size: $subTitleText;
+  }
+  .submit {
+    a {
+      color: $grayColor;
+      background-color: $yellowColor;
+      cursor: pointer;
+      transform: rotate(45deg);
+    }
+  }
+}

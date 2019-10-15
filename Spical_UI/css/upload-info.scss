@@ -1,0 +1,104 @@
+// COLOR
+$bgColor: #f1f1f1;
+$bgLogin2: #0e0e0e;
+$bgColor2: #3b3b3b;
+$yellowColor: #FFC34B;
+$grayColor: #3B3B3B;
+// FONT
+@font-face {
+  font-family: "Script"; /*a name to be used later*/
+  src: url("../fonts/ScriptMT/SCRIPTBL.ttf"); /*URL to font*/
+}
+$iconsText: 30px;
+$titleAlbumsText: 40px;
+$subTitleText: 16px;
+$footerText: 20px;
+$titleText: 20px;
+$subHeaderText: 20px;
+$navText: 24px;
+//IMAGE
+$bgImages: "../images/background (3).png";
+
+html,
+body {
+  font-family: "Script";
+  background: $bgColor;
+}
+
+// NAVBAR
+.navbar-fixed{
+  nav{
+    background: transparent;
+    box-shadow: none;
+    .nav-wrapper{
+      a{
+        color: $bgColor2;
+        font-size: $navText;
+      }
+      li{
+        color: $bgColor2;
+      }
+    }
+  }
+}
+
+// ICON-LOGO
+.icon-logo{
+  padding: 50px 0px 0px 0px;
+}
+
+// CREATE-UPLOAD
+.create-upload{
+  h5{
+    margin: 0px;
+  }
+  p{
+    padding: 0 20%;
+    margin: 0px;
+    font-size: $subTitleText;
+  }
+}
+
+// INFO-INPUT
+.info-input{
+  .input-field{
+    border-radius: 25px;
+    background: white;
+    box-shadow: 0px 2px 3px #888888;
+    input[type="text"]{
+      border-bottom: 0px;
+      margin-bottom: 0px;
+      height: 40px;
+      margin-left: 40px;
+      font-family: 'Script';
+      &:focus{
+        border-bottom: none;
+        box-shadow: none;
+      }
+    }
+    i{
+      padding-left: 15px;
+      padding-top: 3px;
+      font-size: 20px;
+    }
+    .prefix.active{
+      color: $yellowColor;
+    }
+  }
+  
+  .time{
+    .btn{
+      border: none;
+      border-radius: 2px;
+      display: inline-block;
+      height: 37px;
+      line-height: 36px;
+      width: 100%;
+      border-radius: 25px;
+      padding: 0 16px;
+      text-transform: capitalize;
+      background: $yellowColor;
+      color: $grayColor;
+    }
+  }
+}

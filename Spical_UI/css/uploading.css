@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Script";
+  /*a name to be used later*/
+  src: url("../fonts/ScriptMT/SCRIPTBL.ttf");
+  /*URL to font*/ }
+html,
+body {
+  font-family: "Script";
+  background: #f1f1f1; }
+
+.navbar-fixed nav {
+  background: transparent;
+  box-shadow: none; }
+  .navbar-fixed nav .nav-wrapper a {
+    color: #3b3b3b;
+    font-size: 24px; }
+  .navbar-fixed nav .nav-wrapper li {
+    color: #3b3b3b; }
+
+.icon-logo {
+  padding: 50px 0px 0px 0px;
+  position: relative; }
+  .icon-logo .icon-logo-circle {
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffc34b;
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 6px 16% #888888;
+    padding-top: 80px;
+    padding-bottom: 80px; }
+    .icon-logo .icon-logo-circle h3 {
+      margin: auto; }
+
+.create-upload {
+  margin-top: 60px;
+  padding-top: 130px;
+  height: 900px;
+  width: 100%;
+  background: white;
+  border-radius: 50px 50px 0 0;
+  box-shadow: 0px 3px 6px 16% #888888; }
+  .create-upload p {
+    padding: 0 20%;
+    font-size: 16px; }
+  .create-upload .submit a {
+    color: #3b3b3b;
+    background-color: #ffc34b;
+    cursor: pointer;
+    transform: rotate(45deg); }
+
+/*# sourceMappingURL=uploading.css.map */
