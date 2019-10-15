@@ -1,0 +1,63 @@
+// COLOR
+$bgColor: #f1f1f1;
+$bgLogin2: #0e0e0e;
+$bgColor2: #3b3b3b;
+$yellowColor: #ffc34b;
+$grayColor: #3b3b3b;
+// FONT
+@font-face {
+  font-family: "Script"; /*a name to be used later*/
+  src: url("../fonts/ScriptMT/SCRIPTBL.ttf"); /*URL to font*/
+}
+$iconsText: 30px;
+$titleAlbumsText: 40px;
+$subTitleText: 16px;
+$footerText: 20px;
+$titleText: 20px;
+$subHeaderText: 20px;
+$navText: 24px;
+//IMAGE
+$bgImages: "../images/background (3).png";
+
+html,
+body {
+  font-family: "Script";
+}
+
+// NAVBAR
+.navbar-fixed {
+  nav {
+    background: transparent;
+    box-shadow: none;
+    .nav-wrapper {
+      a {
+        color: $bgColor2;
+        font-size: $navText;
+      }
+      li {
+        color: $bgColor2;
+      }
+    }
+  }
+}
+
+// ICON-LOGO
+.icon-logo {
+  padding: 50px 0px 0px 0px;
+}
+
+// CREATE-UPLOAD
+.create-upload {
+  margin-top: 60px;
+  p {
+    padding: 0 20%;
+    font-size: $subTitleText;
+  }
+  .submit {
+    a {
+      color: $grayColor;
+      background: $yellowColor;
+      cursor: pointer;
+    }
+  }
+}

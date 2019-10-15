@@ -1,0 +1,69 @@
+// COLOR
+$bgLogin1: #464646;
+$bgLogin2: #0e0e0e;
+$colorText: black;
+// FONT
+@font-face {
+  font-family: "Script"; /*a name to be used later*/
+  src: url("../fonts/ScriptMT/SCRIPTBL.ttf"); /*URL to font*/
+}
+$logoText: 25px;
+$titleText: 40px;
+$subTitleText: 16px;
+$footerText: 20px;
+//IMAGE
+
+html,
+body {
+  // background-image: linear-gradient(80deg, $bgLogin1, $bgLogin2);
+  font-family: "Script";
+  background: #f3f3f3;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  .row {
+    .logo {
+      p {
+        color: $colorText;
+        font-size: $logoText;
+      }
+    }
+    .content {
+      h4 {
+        color: $colorText;
+        font-size: $titleText;
+      }
+      p {
+        color: $colorText;
+        font-size: $subTitleText;
+      }
+    }
+    .forgot-password {
+      a {
+        color: $colorText;
+      }
+    }
+    .submit {
+      padding-top: 10%;
+      a.google {
+        margin-left: 5px;
+      }
+      .go {
+        .btn {
+          width: 80px;
+          border-radius: 50px;
+          font-family: "Script";
+        }
+      }
+    }
+  }
+}
+.signup {
+  text-align: center;
+  a {
+    color: $colorText !important;
+    font-size: $footerText;
+  }
+}

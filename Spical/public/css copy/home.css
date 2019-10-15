@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "Script";
+  /*a name to be used later*/
+  src: url("../fonts/ScriptMT/SCRIPTBL.ttf");
+  /*URL to font*/ }
+html,
+body {
+  font-family: "Script"; }
+
+.navbar-fixed nav {
+  background: #3b3b3b;
+  border: 1px solid #3b3b3b;
+  border-radius: 0px 0px 10px 10px; }
+  .navbar-fixed nav .container span i {
+    margin: 0px 7px; }
+
+.side-menu li.title {
+  background-color: #3b3b3b;
+  padding: 2px 0px;
+  border-radius: 0px 0px 10px 10px; }
+  .side-menu li.title a {
+    color: white;
+    font-size: 20px; }
+.side-menu li a {
+  font-family: "Script"; }
+
+.container-fluid {
+  background: #f1f1f1;
+  position: relative; }
+  .container-fluid .row .col {
+    padding: 0px; }
+    .container-fluid .row .col .images {
+      overflow: hidden;
+      width: 100%;
+      background-image: url("../images/background3.png");
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
+    .container-fluid .row .col .slogan {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      font-family: "Script";
+      color: white; }
+      .container-fluid .row .col .slogan h4,
+      .container-fluid .row .col .slogan p {
+        margin: 0px; }
+
+.title .container .row .col span {
+  font-family: "Script";
+  font-size: 20px; }
+
+.nav-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; }
+  .nav-bottom nav.white {
+    border: 1px solid white;
+    border-radius: 10px 10px 0px 0px; }
+  .nav-bottom .row .col {
+    padding: 0px; }
+    .nav-bottom .row .col ul .col li {
+      width: 100%; }
+      .nav-bottom .row .col ul .col li a i {
+        color: #a0a0a0;
+        font-size: 30px;
+        transition: 0.4s; }
+        .nav-bottom .row .col ul .col li a i:hover {
+          cursor: pointer;
+          color: #3b3b3b !important; }
+        .nav-bottom .row .col ul .col li a i:active {
+          color: #3b3b3b !important; }
+        .nav-bottom .row .col ul .col li a i:focus {
+          color: #3b3b3b !important; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial; }
+
+.header {
+  text-align: center;
+  padding: 32px; }
+
+.row {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+  padding: 0px; }
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 33%;
+  /* IE10 */
+  flex: 33%;
+  max-width: 33%;
+  padding: 0px; }
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 10px; }
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%; } }
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%; } }
+
+/*# sourceMappingURL=home.css.map */

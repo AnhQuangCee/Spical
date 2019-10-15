@@ -1,0 +1,490 @@
+// COLOR
+$bgColor: #f1f1f1;
+$bgLogin2: #0e0e0e;
+$bgColor2: #3b3b3b;
+// FONT
+@font-face {
+  font-family: "Script"; /*a name to be used later*/
+  src: url("../fonts/ScriptMT/SCRIPTBL.ttf"); /*URL to font*/
+}
+$iconsText: 30px;
+$titleAlbumsText: 40px;
+$subTitleText: 16px;
+$footerText: 20px;
+$titleText: 20px;
+$subHeaderText: 20px;
+$navText: 25px;
+//IMAGE
+$bgImages: "../images/background3.png";
+
+html,
+body {
+  font-family: "Script";
+}
+.menu {
+  overflow: hidden;
+  width: 100%;
+  background-image: url($bgImages);
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .navbar-fixed {
+    nav {
+      background: transparent;
+      border-radius: 0px 0px 10px 10px;
+      .container {
+        span {
+          i {
+            margin: 0px 7px;
+            color: white;
+            span {
+              font-family: "Script";
+              font-size: $navText;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//AVATAR
+.avatar {
+  background: $bgColor2;
+  border-radius: 0px 0px 0px 100px;
+  margin-left: 20px;
+  .container {
+    .row {
+      position: relative;
+      .col {
+        .image-block {
+          .circular--landscape {
+            display: inline-block;
+            position: relative;
+            height: 100px;
+            width: 100px;
+            overflow: hidden;
+            border-radius: 50%;
+          }
+
+          .circular--landscape img {
+            width: auto;
+            height: 100%;
+            margin-left: -40px;
+          }
+          .circular--portrait {
+            border: 5px solid white;
+            box-shadow: 0px 2px 6px $bgColor2;
+            position: relative;
+            height: 100px;
+            width: 100px;
+            overflow: hidden;
+            border-radius: 50%;
+          }
+          .circular--portrait img {
+            width: 100%;
+            height: auto;
+          }
+
+          position: absolute;
+          top: -55px;
+          img {
+            height: 140px;
+            width: 140px;
+          }
+        }
+        .name {
+          margin-left: 110px;
+          p {
+            font-family: "Script";
+            font-size: 15px;
+            margin: 0px;
+            color: white;
+          }
+          p.sub-name {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+//SLIDE-MENU
+.side-menu {
+  li.title {
+    background-color: $bgColor2;
+    padding: 2px 0px;
+    border-radius: 0px 0px 10px 10px;
+    a {
+      color: white;
+      font-size: $subHeaderText;
+    }
+  }
+  li {
+    a {
+      font-family: "Script";
+    }
+  }
+}
+.container-fluid {
+  background: $bgColor;
+  position: relative;
+  .row {
+    .col {
+      padding: 0px;
+      .images {
+        overflow: hidden;
+        width: 100%;
+        background-image: url($bgImages);
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .slogan {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        font-family: "Script";
+        color: white;
+        h4,
+        p {
+          margin: 0px;
+        }
+      }
+    }
+  }
+}
+
+// SLIDE IMAGE
+.slide-image {
+  margin-top: 20px;
+  height: 200px;
+  .container {
+    .row {
+      .col {
+        p {
+          font-family: "Script";
+          font-size: $titleText;
+        }
+        height: 180px;
+        .images {
+          overflow: hidden;
+          width: 100%;
+          background-image: url($bgImages);
+          height: 100%;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          border-radius: 10px;
+          position: relative;
+        }
+        .text{
+          position: absolute;
+          bottom: 0;
+          left: 10px;
+          p{
+            color: white;
+            margin: 0;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// GALLERY
+.gallery {
+  .container {
+    .row {
+      .col {
+        p {
+          font-family: "Script";
+          font-size: $titleText;
+          margin: 0px;
+        }
+        .image-block {
+          height: 100px;
+          width: 100px;
+          margin-bottom: 20px;
+          position: relative;
+          .circular--landscape {
+            display: inline-block;
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            overflow: hidden;
+          }
+
+          .circular--landscape img {
+            width: auto;
+            height: 100%;
+            margin-left: -40px;
+          }
+          .circular--portrait {
+            border-radius: 10px;
+            box-shadow: 0px 2px 6px $bgColor2 !important;
+            position: relative;
+            height: 100px;
+            width: 100px;
+            overflow: hidden;
+          }
+          .circular--portrait img {
+            width: 100%;
+            height: auto;
+          }
+          img {
+            height: 100px;
+            width: 100px;
+          }
+          p.name {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 0;
+            font-family: "Script";
+            color: white;
+          }
+          .bg-file {
+            background: inherit;
+            border-radius: 8px;
+            box-shadow: 0 0 32px rgba(0, 0, 0, 0.9);
+            background: rgba(255, 255, 255, 0.3);
+            overflow: hidden;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            height: 30px;
+            width: 60px;
+            padding: 5px 5px;
+            border-radius: 10px;
+            .text {
+              p.file {
+                font-family: "Script";
+                color: black;
+                font-size: 12px;
+                text-align: center;
+                margin: auto;
+              }
+            }
+            .blur {
+              background: inherit;
+              height: 30px;
+              width: 60px;
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              filter: blur(20px);
+              z-index: -1;
+            }
+          }
+        }
+      }
+      .card {
+        border-radius: 10px;
+        img {
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
+.nav-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  nav.white {
+    border: 1px solid white;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .row {
+    .col {
+      padding: 0px;
+      ul {
+        .col {
+          li {
+            width: 100%;
+            a {
+              i {
+                color: #a0a0a0;
+                font-size: $iconsText;
+                transition: 0.4s;
+                &:hover {
+                  cursor: pointer;
+                  color: $bgColor2 !important;
+                }
+                &:active {
+                  color: $bgColor2 !important;
+                }
+                &:focus {
+                  color: $bgColor2 !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 33%; /* IE10 */
+  flex: 33%;
+  max-width: 33%;
+  padding: 0px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 1920px) and (min-width: 1080px){
+  .gallery {
+    .container {
+      .row {
+        .col {
+          p {
+            font-family: "Script";
+            font-size: $titleText;
+            margin: 0px;
+          }
+          .image-block {
+            height: 320px;
+            width: 320px;
+            margin-bottom: 40px;
+            position: relative;
+            .circular--landscape {
+              display: inline-block;
+              position: absolute;
+              height: 100%;
+              overflow: hidden;
+            }
+  
+            .circular--landscape img {
+              width: auto;
+              height: 100%;
+              margin-left: -40px;
+            }
+            .circular--portrait {
+              border-radius: 10px;
+              box-shadow: 0px 2px 6px $bgColor2 !important;
+              position: relative;
+              height: 320px;
+              width: 320px;
+              overflow: hidden;
+            }
+            .circular--portrait img {
+              width: 100%;
+              height: auto;
+            }
+            img {
+              height: 100px;
+              width: 100px;
+            }
+            p.name {
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+              transform: translateX(-50%);
+              margin: 0;
+              font-family: "Script";
+              color: white;
+            }
+            .bg-file {
+              background: inherit;
+              border-radius: 8px;
+              box-shadow: 0 0 32px rgba(0, 0, 0, 0.9);
+              background: rgba(255, 255, 255, 0.3);
+              overflow: hidden;
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              height: 60px;
+              width: 120px;
+              padding: 10px 10px;
+              border-radius: 10px;
+              .text {
+                p.file {
+                  font-family: "Script";
+                  color: black;
+                  font-size: 24px;
+                  text-align: center;
+                  margin: auto;
+                }
+              }
+              .blur {
+                background: inherit;
+                height: 60px;
+                width: 120px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                filter: blur(20px);
+                z-index: -1;
+              }
+            }
+          }
+        }
+        .card {
+          border-radius: 20px;
+          img {
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+  }
+}

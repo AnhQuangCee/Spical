@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Script";
+  /*a name to be used later*/
+  src: url("../fonts/ScriptMT/SCRIPTBL.ttf");
+  /*URL to font*/ }
+html,
+body {
+  font-family: "Script";
+  background: #f1f1f1;
+  overflow: hidden; }
+
+.navbar-fixed nav {
+  background: transparent;
+  box-shadow: none; }
+  .navbar-fixed nav .nav-wrapper a {
+    color: #3b3b3b;
+    font-size: 24px; }
+  .navbar-fixed nav .nav-wrapper li {
+    color: #3b3b3b; }
+
+.icon-logo {
+  padding: 130px 0px 0px 0px; }
+  .icon-logo p {
+    font-size: 16px; }
+  .icon-logo .btn {
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 37px;
+    line-height: 36px;
+    width: 100%;
+    border-radius: 25px;
+    padding: 0 16px;
+    margin-top: 76px;
+    text-transform: capitalize;
+    background: #ffc34b;
+    color: #3b3b3b;
+    width: 193px; }
+
+.opps-background {
+  height: 270px;
+  position: absolute;
+  bottom: -54px;
+  left: 0; }
+  .opps-background .container-fluid .row .col {
+    padding: 0px; }
+    .opps-background .container-fluid .row .col img {
+      height: 120%;
+      width: 100%; }
+
+/*# sourceMappingURL=page-not-found.css.map */
